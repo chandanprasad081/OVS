@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Road Help"
+        android:textSize="25sp"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#EDEFF3"
+
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:background="@drawable/honda"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:fitsSystemWindows="true">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="User"
+                android:id="@+id/user"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:padding="0dp"
+                android:background="@drawable/background"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Admin"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/admin"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:padding="0dp"
+                android:background="@drawable/background"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:fitsSystemWindows="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Business Owner Login"
+                android:id="@+id/bol"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:padding="0dp"
+                android:background="@drawable/background"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</LinearLayout>
